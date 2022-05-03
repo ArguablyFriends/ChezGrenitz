@@ -1,5 +1,5 @@
 ---
-version: "1.1"
+version: "1.2"
 services:
   sonarr:
     image: lscr.io/linuxserver/sonarr:3.0.8
@@ -11,7 +11,7 @@ services:
     volumes:
       - /home/sonarr/.config/NzbDrone:/config
       - /plex/TV_Shows:/plex/TV_Shows
-      - /plex/complete:/plex/downloads
+      - /plex/complete:/plex/complete
     ports:
       - 8989:8989
     restart: unless-stopped
